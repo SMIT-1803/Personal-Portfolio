@@ -1,0 +1,130 @@
+:root{
+    --bgColor: rgb(52, 52, 52);
+    --textColor: white;
+    --yellow: #f9c61b;
+    font-family: "Inter", sans-serif;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    /* background-color: var(--bgColor); */
+}
+
+body{
+    background-color: var(--bgColor);
+}
+
+
+
+nav{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    padding-top:4vmin;
+    color: var(--textColor);
+    align-items: center;
+    position: absolute;
+    background-color: var(--bgColor);
+}
+
+nav .nameAndLogo{
+    display: flex;
+    font-size: 30px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+nav .nameAndLogo img{
+    width: 45px;
+    border-radius: 22.5px;
+    border: 1px solid var(--yellow);
+}
+
+nav ul {
+    display: flex;
+    gap:2vmax;
+    font-size: 16px;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li:hover{
+    cursor: pointer;
+}
+
+nav ul li{
+    list-style-type: none;
+}
+
+.ContactMe{
+    color: white;
+    background-color:var(--yellow);
+    padding: 10px;
+    border-radius: 25px;
+    font-size: 16px;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+nav .navigators .hamMenu img{
+    display: none;
+    height: 40px;
+}
+
+nav .navigators .hamMenu img:hover{
+    cursor: pointer;
+}
+
+
+
+.hamBar {
+    opacity: 0;  
+    visibility: hidden; 
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: start;
+    position: absolute;
+    background: rgba(40, 38, 38, 0.5);
+    padding-top: 40px;
+    padding-bottom: 40px;
+    top: 75px;
+    z-index: 2;
+    color: var(--textColor);
+    transform: translateY(-20px);
+    transition: opacity 0.3s ease;
+}
+
+.letShow {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+
+.hamBar ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.hamBar li{
+    list-style-type: none;
+}
+
+
+@media only screen and (max-width: 960px){
+    nav .ulBar{
+        display: none;
+    }
+    nav .navigators .hamMenu img{
+        display:inline
+    }
+
+}
+
