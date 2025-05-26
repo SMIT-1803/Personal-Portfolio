@@ -1,0 +1,127 @@
+body {
+    background-color: rgb(17, 24, 39);
+}
+html {
+    scroll-behavior:smooth;
+}
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+  }
+
+
+.heading{
+    text-align: center;
+    position: relative;
+    top: 145px;
+    color: whitesmoke;
+}
+
+.mainHeading{
+    font-size: 65px;
+    font-weight: bolder;
+    background: linear-gradient(56deg,#ff0000, #ff7300);
+    color: transparent;
+    background-clip: text;
+    position: relative;
+    top: -11px;
+}
+
+.description{
+    font-weight: bold;
+    color: whitesmoke;
+}
+
+table{
+    position: relative;
+    top: 140px;
+    left: 160px;
+    border-collapse: separate;
+    width: 78%;
+    display: flex;
+    justify-content: center;
+    border-spacing: 40px;
+
+}
+
+td a{
+    text-decoration: none;
+}
+
+
+.projectBox {
+    position: relative;
+    height: 565px;
+    width: 500px;
+    background-color: whitesmoke;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    text-align: center;
+    box-sizing: border-box; 
+    border: solid 4px;
+    border-image: linear-gradient(56deg,#ff0000, #ff7300)1;
+    transition: 0.3s ease-in-out;
+    box-shadow: 2px 3px 11px 0px #ff7300;
+}
+
+.github{
+    width: 100%;
+    text-align: right;
+    padding-bottom: 5px;
+}
+
+.github img{
+    height: 30px;
+}
+
+.github img:hover{
+    animation: shake 0.5s ease-in-out;
+}
+
+.main{
+    width: 100%;
+    height: auto; 
+    display: block; 
+    margin: 0 auto;
+    border-radius: 10px;
+    
+}
+
+.projectBox h2{
+    color: black;
+    text-align: left;
+    padding-top:10px;
+    padding-bottom: 10px;
+}
+
+.projectBox p{
+    color: black;
+    text-align: justify;
+    padding-bottom: 10px;
+}
+
+
+.projectBox:hover{
+    transform: scale(1.05);
+}
+
+.skillsDisplay{
+    padding-top: 10px;
+    text-align: left;
+    display: flex;
+}
+
+.skillsDisplay img{
+    height: 30px;
+    padding-right: 15px;
+}
+
+footer{
+    position: relative;
+    top: 225px;
+}
